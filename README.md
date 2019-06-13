@@ -15,7 +15,7 @@ Simple way to handle the Idling Resource in your Espresso tests.
 ## Add the dependency
 
 	dependencies {
-	        implementation 'com.github.stavro96:smoothie:Tag'
+	        implementation 'com.github.stavro96:smoothie:1.0'
 	}
 
 # Usage: 
