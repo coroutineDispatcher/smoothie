@@ -7,12 +7,12 @@ object Smoothie {
     val countingIdlingResource = SmoothieThermometer(RESOURCE)
 
     fun increment() {
-        countingIdlingResource.increment()
+        countingIdlingResource.startProcess()
     }
 
     fun decrement() {
         if (!countingIdlingResource.isIdleNow) {
-            countingIdlingResource.decrement()
+            countingIdlingResource.endProcess()
         }
     }
 }

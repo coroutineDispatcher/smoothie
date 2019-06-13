@@ -19,14 +19,13 @@ class SmoothieThermometer(private val resourceName: String): IdlingResource {
         this.resourceCallback = resourceCallback
     }
 
-    fun increment() {
+    fun startProcess() {
         counter.getAndIncrement()
     }
 
-    fun decrement() {
+    fun endProcess() {
         val counterVal = counter.decrementAndGet()
         if (counterVal == 0) {
-            // we've gone from non-zero to zero. That means we're idle now! Tell espresso.
             resourceCallback?.onTransitionToIdle()
         } else if (counterVal < 0) {
             throw IllegalStateException("Your counter has been used wrong")
