@@ -6,13 +6,13 @@ object Smoothie {
     @JvmField
     val countingIdlingResource = SmoothieThermometer(RESOURCE)
 
-    fun increment() {
-        countingIdlingResource.startProcess()
+    fun startProcess() {
+        countingIdlingResource.increment()
     }
 
-    fun decrement() {
+    fun endProcess() {
         if (!countingIdlingResource.isIdleNow) {
-            countingIdlingResource.endProcess()
+            countingIdlingResource.decrement()
         }
     }
 }

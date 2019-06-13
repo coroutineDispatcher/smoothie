@@ -19,11 +19,11 @@ class SmoothieThermometer(private val resourceName: String): IdlingResource {
         this.resourceCallback = resourceCallback
     }
 
-    fun startProcess() {
+    fun increment() {
         counter.getAndIncrement()
     }
 
-    fun endProcess() {
+    fun decrement() {
         val counterVal = counter.decrementAndGet()
         if (counterVal == 0) {
             resourceCallback?.onTransitionToIdle()

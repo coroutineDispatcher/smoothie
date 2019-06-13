@@ -35,22 +35,22 @@ class SmoothieThermometerTest {
 
     @Test
     fun `increment method should return false on isIdleNow`() {
-        smoothieThermometer.startProcess()
+        smoothieThermometer.increment()
         assertEquals(false, smoothieThermometer.isIdleNow)
     }
 
     @Test(expected = IllegalStateException::class)
     fun `decrement method should throw error`() {
-        smoothieThermometer.endProcess()
+        smoothieThermometer.decrement()
     }
 
     @Test
     fun `decrement method should return true on isIdleNow`() {
-        smoothieThermometer.startProcess()
+        smoothieThermometer.increment()
 
         assertEquals(false, smoothieThermometer.isIdleNow)
 
-        smoothieThermometer.endProcess()
+        smoothieThermometer.decrement()
 
         assertEquals(true, smoothieThermometer.isIdleNow)
     }
