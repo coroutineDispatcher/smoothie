@@ -18,7 +18,7 @@ Smoothie.endProcess()
 In your Espresso test: 
 
 ```Kotlin
-@Before
+    @Before
     fun setUp() {
         IdlingRegistry.getInstance().register(Smoothie.countingIdlingResource)
         //other dependencies
