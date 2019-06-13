@@ -1,6 +1,23 @@
 # Smoothie 🍦⛸🍨❄
 Simple way to handle the Idling Resource in your Espresso tests. 
 
+# Download
+
+## Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+    
+## Add the dependency
+
+	dependencies {
+	        implementation 'com.github.stavro96:smoothie:Tag'
+	}
+
 # Usage: 
 
 ## In your class where you have some async operation: 
