@@ -7,11 +7,11 @@ Simple way to handle the Idling Resource in your Espresso tests.
 
 ```Groovy
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
     
 ## Add the dependency
