@@ -1,5 +1,3 @@
-[![Sourcegraph](https://sourcegraph.co//github.com/stavro96/-/badge.svg)](https://sourcegraph.com/github.com/stavro96/smoothie?badge)
-
 # Smoothie 🍦⛸🍨❄
 Simple way to handle the Idling Resource in your Espresso tests. 
 
