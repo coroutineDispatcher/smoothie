@@ -54,7 +54,7 @@ In your Espresso test:
 
 Note: The library supports the latest version for Idling-Resources with the AndroidX usage: 
 ```Groovy
-    androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.2.0'
+    implementation 'androidx.test.espresso:espresso-idling-resource:3.2.0'
 ```
 And we are good to go. 
 
