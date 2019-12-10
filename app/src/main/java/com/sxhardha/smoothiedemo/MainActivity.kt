@@ -1,7 +1,7 @@
 package com.sxhardha.smoothiedemo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.sxhardha.smoothie.Smoothie
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnSmoothie.setOnClickListener {
-            Smoothie.startProcess()
             GlobalScope.launch(Dispatchers.IO) {
+                Smoothie.startProcess()
                 delay(5000)
                 withContext(Dispatchers.Main) {
-                    Smoothie.endProcess()
                     tvSmoothie.text = "HELLO SMOOTHIE!"
+                    Smoothie.endProcess()
                 }
             }
         }
