@@ -18,7 +18,7 @@ allprojects {
 
 ```Groovy
 	dependencies {
-	        implementation 'com.github.stavro96:smoothie:1.0'
+	        implementation 'com.github.coroutineDispatcher:smoothie:1.0.1'
 	}
 ```
 
