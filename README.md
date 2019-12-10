@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/coroutineDispatcher/smoothie.svg)](https://jitpack.io/#coroutineDispatcher/smoothie)
+
 # Smoothie 🍦⛸🍨❄
 Simple way to handle the Idling Resource in your Espresso tests. 
 
